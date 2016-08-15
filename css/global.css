@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/**
+ * @author lizhigang
+ */
+
+
+/* 全局样式 */
+body { background-color: #fff; font-family: "microsoft yahei", Helvetica;}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { color: #999; -webkit-transition: color.5s; transition: color.5s;} 
+input:focus::-webkit-input-placeholder, input:hover::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder { color: #c2c2c2; -webkit-transition: color.5s; transition: color.5s;}
+a, input { -webkit-tap-highlight-color: transparent; tap-highlight-color: transparent;}
+.content { width: 1003px; margin: 0 auto;}
+
+/* 清除浮动 */
+.clearfix:after { content: "."; display: block;  clear: both; visibility: hidden; height: 0;}
+.clearfix { clear: both; *display: inline-block;}
+
+/* 按钮UI */
+.ui-button1 { display: inline-block; border: #fff solid 1px; color: #fff; text-align: center; text-decoration: none; letter-spacing: normal; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+.ui-button2 { display: inline-block; border: #00b0f0 solid 1px; color: #00b0f0; text-align: center; text-decoration: none; letter-spacing: normal; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+.ui-button3 { display: inline-block; background-color: #00b0f0; color: #fff; text-align: center; text-decoration: none; letter-spacing: normal; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+.ui-button1:hover { background-color: #fff; color: #00b0f0;}
+.ui-button2:hover { background-color: #00b0f0; color: #fff;}
+
+/* 标题UI */
+.title h2 { color: #000; font-size: 30px; font-weight: bold;}
+.title h3 { color: #ccc; font-size: 24px; font-weight: bold;}
+
+/* 弹出层UI */
+.mask { display: none; position: fixed; left: 0; top: 0; z-index: 12; width: 100%; height: 100%; background: url(../images/mask.png);}
+.popup { display: none; position: fixed; left: 50%; top: 50%; z-index: 13; margin: -300px 0 0 -300px; padding: 10px 0; width: 600px; background-color: #fff; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+.popup .title { position: relative; margin-bottom: 25px;}
+.popup .title a.btn-close { position: absolute; right: 10px; top: 0; color: #7a7a7a; font-size: 14px; text-decoration: none;}
+.popup .title a.btn-close .close { font-size: 24px;}
+.popup .title a:hover.btn-close .close { color: #eb4f38;}
+.popup .main .button-box { font-size: 14px; text-align: center;}
+.popup .main .button-box a { color: #999; font-size: 14px; text-decoration: none;}
+.popup .main .button-box .submit { margin-right: 26px; width: 100px; height: 32px; line-height: 32px; color: #fff; text-align: center;}
+
+/* 表单UI */
+.input-area label { margin-right: 5px; font-size: 14px; letter-spacing: normal; vertical-align: middle;}
+.input-area .textarea label { padding-top: 10px; vertical-align: top;}
+.input-area .cell { display: inline-block; vertical-align: middle;}
+.input-area input { border: 1px solid #d0d0d5; height: 20px; padding: 6px 8px; line-height: 20px; background-color: #fff; color: #545a6c; font-size: 14px; outline: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;}
+.input-area textarea { overflow: auto; border: 1px solid #d0d0d5; padding: 9px 8px; background-color: #fff; line-height: 20px; color: #545a6c; font-size: 14px; outline: none; word-break: break-all; vertical-align: top; resize: none; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;}
+.input-area input:hover,
+.input-area textarea:hover { border-color: #ababaf;}
+.input-area input:focus,
+.input-area textarea:focus { border-color: #00b0f0;}
+.input-area .error input { border-color: #eb6877;}
+.input-area .rows { position: relative; margin-bottom: 15px; letter-spacing: -3px; font-size: 0;}
+.tip { display: none; position: absolute; top: -40px; left: 75px; z-index: 9; text-align: center;}
+.tip .tip-before { display: block; max-width: 250px; padding: 6px 10px; line-height: 18px; background: #333; color: #fff; font-size: 12px; font-style: normal; text-align: left; letter-spacing: normal; white-space: nowrap; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+.tip .arrow { overflow: hidden; display: block; *display: inline-block; position: relative; top: -9px; left: 0; color: #333; font-size: 20px;}
+.error .tip-before { background-color: #eb6877;}
+.error .arrow { color: #eb6877;}

@@ -1,0 +1,243 @@
+@charset "UTF-8";
+
+/**
+ * @author lizhigang
+ */
+
+/* 适配于ipad及以上的分辨率 */
+@media screen and (max-width: 1002px) {
+	.overflow { overflow-y: hidden; height: 100%;}
+	.content { width: auto;}
+	.title h2 { color: #000; font-size: 16px; font-weight: bold;}
+	.title h3 { color: #ccc; font-size: 12px; font-weight: bold;}
+	.header { height: 5.6rem; background-size: cover;}
+	.header .left h1 { line-height: 32px; font-size: 16px;}
+	.header .right .button-box .phone-box { display: none;}
+	.header .right .button-box .ipad-phone-box { display: inline-block; vertical-align: middle;}
+	.header .right .button-box .ipad-phone-box .phone { margin-right: 5px; color: #fff; font-size: 24px;}
+	.header .right .button-box .ipad-phone-box em { display: inline-block; line-height: 34px; color: #fff; font-size: 24px; letter-spacing: normal;}
+	.header .pos-box { top: 98px;}
+	.header .slogan { width: auto;}
+	.header .slogan h2 { margin-bottom: 5px; margin-left: 145px; font-size: 18px;}
+	.header .slogan .content { margin-left: 145px;}
+	.header .slogan .txt { margin-bottom: 17px;}
+	.header .slogan .txt p { line-height: 18px; font-size: 12px;}
+	.header .slogan .button-box .phone-box { display: none;}
+	.header .slogan .button-box .ipad-phone-box { display: inline-block; color: #fff; font-size: 16px; letter-spacing: normal;}
+	.header .slogan .button-box .ipad-phone-box .phone { font-size: 16px;}
+	.header .slogan .button-box .get-data { padding: 0 12px;}
+	.fixed .right .button-box .ipad-phone-box em,
+	.fixed .right .button-box .ipad-phone-box .phone { color: #000; white-space: nowrap;}
+	
+	.main .we-do { width: auto; padding-top: 28px;}
+	.main .we-do h2 { margin-bottom: 28px; font-size: 16px;}
+	.main .we-do .module { width: 90%; margin: 0 auto;}
+	.main .we-do .module li { width: 33.1%;}
+	.main .we-do .module a { padding-top: 0; padding-bottom: 0;}
+	.main .we-do .module a h3 { font-size: 18px;}
+	.main .we-do .module a .txt { width: 150px;}
+	.main .we-do .module a .txt p { line-height: 22px; font-size: 12px;}
+	.main .we-do .module a .icon-spot-box { top: 0;}
+	.main .we-do .module a .spot { font-size: 20px;}
+	
+	.main .we-can { margin-top: 50px; height: 334px; background: url(../images/mobile/index_02.jpg) no-repeat center top; background-size: cover;}
+	.main .we-can .title { margin-top: 10px; width: 211px; height: 72px;}
+	.main .we-can .title h2 { margin-left: 50px; padding-top: 20px;}
+	.main .we-can .title h3 { margin-left: 50px;}
+	.main .we-can .list { width: 87%; margin: 0 auto; padding-top: 62px;}
+	.main .we-can .list li h3 { margin-bottom: 5px; font-size: 16px; font-weight: bold;}
+	.main .we-can .list li p { margin-bottom: 20px; width: 295px; height: auto; line-height: 18px; font-size: 12px;}
+	
+	.main .improvement { padding: 38px 0;}
+	.main .improvement .map { width: 85%; height: 215px; background-size: auto 100%;}
+	.main .improvement .map .left,
+	.main .improvement .map .right { width: 200px;}
+	.main .improvement .map .left .line1 { margin-right: 10px; width: 20px; height: 109px;}
+	.main .improvement .map .right .line1 { margin-left: 10px; width: 20px; height: 109px;}
+	.main .improvement .map .left .line2,
+	.main .improvement .map .right .line2 { width: 10px;}
+	.main .improvement .map .txt h3 { margin-bottom: 5px; font-size: 16px;}
+	.main .improvement .map .txt h4 { margin-bottom: 2px; font-size: 16px;}
+	.main .improvement .map .txt .sub-menu a,
+	.main .improvement .map .txt .sub-menu i { font-size: 12px;}
+	.main .improvement .map .left-top,
+	.main .improvement .map .right-top { top: -15px;}
+	.main .improvement .map .left-bottom,
+	.main .improvement .map .right-bottom { bottom: -55px;}
+	.main .improvement .map .line1 .point1,
+	.main .improvement .map .line1 .point2 { font-size: 20px;}
+	.main .improvement .map .left .line1 .point1 { left: -20px; top: -13px;}
+	.main .improvement .map .right .line1 .point1 { left: 30px; top: -13px;}
+	.main .improvement .map .left .line1 .point2 { left: -20px; bottom: -9px;}
+	.main .improvement .map .right .line1 .point2 { left: 30px; bottom: -9px;}
+	
+	.main .multiple { width: 95%; margin: 0 auto; padding: 40px 0;}
+	.main .multiple .title { margin-bottom: 40px;}
+	.main .multiple .list .title { padding: 9px 18px; font-size: 12px;}
+	.main .multiple .list .sub { width: 75%; padding: 0;}
+	.main .multiple .list .sub span { margin-bottom: 15px; width: 62px; padding: 9px 0;}
+	
+	.main .customization { height: 290px; background-size: cover;}
+	.main .customization .title { margin-bottom: 38px; padding-top: 35px;}
+	.main .customization .module { width: 90%; margin: 0 auto;}
+	.main .customization .module li { margin-bottom: 20px;}
+	.main .customization .module .item .icon-box { width: 40px; height: 40px;}
+	.main .customization .module .item .icon-box .merge { line-height: 40px; font-size: 24px;}
+	.main .customization .module .item .icon-box .link { line-height: 35px; font-size: 34px;}
+	.main .customization .module .item .icon-box .clip { line-height: 40px; font-size: 26px;}
+	.main .customization .module .item .icon-box .light { line-height: 36px; font-size: 30px;}
+	.main .customization .module .item .info { width: 250px;}
+	.main .customization .module .item .info h3 { margin-bottom: 3px; font-size: 16px; font-weight: bold;}
+	.main .customization .module .item .info p { line-height: 16px; font-size: 12px;}
+	
+	.main .cooperation { width: auto; margin-top: 48px;}
+	.main .cooperation .title { margin-bottom: 30px;}
+	.main .cooperation .list li a { width: 3.2rem; height: 2.4rem;}
+	.main .cooperation .list li a:hover { background-color: #fff;}
+	.main .cooperation .list li a img { width: 80%;}
+	
+	.footer { margin-top: 24px; background-color: transparent;}
+	.footer .left { float: none;}
+	.footer .address { text-align: center;}
+	.footer .address span { color: #e2e2e2;}
+	.footer .address .web-logo img { display: none;}
+	.footer .address .mobile-logo { display: inline-block;}
+	.footer .address .mobile-logo img { display: block; height: 29px;}
+	.footer .address .txt { display: inline-block; width: 180px; line-height: 16px; color: #e2e2e2; text-align: left;}
+	.footer .copyright { margin: 0 auto; width: 220px; color: #e2e2e2; text-align: center;}
+	.footer .phone { display: none;}
+}
+
+/* 适配于iphone6及以上的分辨率 */
+@media screen and (max-width: 767px) {
+	.header { height: 11.25rem; background-size: cover;}
+	.header .left { margin-left: 15px;}
+	.header .left h1 { display: none; line-height: 34px; font-size: 12px; font-weight: bold;}
+	.header .left .h1-mobile { display: block; font-size: 12px; font-weight: bold; line-height: 18px;}
+	.header .right .button-box { margin-right: 0;}
+	.header .right .button-box a { margin: 0 10px 0 0; vertical-align: middle;}
+	.header .right .button-box .phone-box { display: inline-block; width: 40px;}
+	.header .right .button-box .ipad-phone-box { display: none;}
+	.header .right .button-box .phone-box .phone { line-height: 28px; font-size: 24px;}
+	.header .right .button-box .phone-num { left: -99999px;}
+	.header .pos-box { top: 3.7rem;}
+	.header .slogan { width: auto;}
+	.header .slogan .content { margin-left: 2rem; width: 11.8rem;}
+	.header .slogan h2 { margin: 0 0 .25rem 2rem; font-size: 16px;}
+	.header .slogan .txt { margin-bottom: 1rem;}
+	.header .slogan .txt p { line-height: 18px; font-size: 12px;}
+	.header .slogan .button-box .get-data { height: 30px; padding: 0 8px; line-height: 30px; font-size: 14px;}
+	.header .slogan .button-box .phone-box,
+	.header .slogan .button-box .phone { font-size: 14px;}
+	.header .slogan .button-box .ipad-phone-box { display: none;}
+	.header .slogan .button-box .phone-box:hover,
+	.header .slogan .button-box .phone-box:hover i { font-size: 14px;}
+	
+	
+	.main .we-do { width: auto; padding-top: 1rem;}
+	.main .we-do h2 { margin-bottom: 1rem; font-size: 16px;}
+	.main .we-do .module li { border-right: none; border-bottom: #00b0f0 solid 1px; width: 78%;}
+	.main .we-do .module li.spot { border-top: #00b0f0 solid 1px; border-left: none;}
+	.main .we-do .module a { padding: 1rem 0;}
+	.main .we-do .module a .icon-spot-box { right: 0; top: .8rem;}
+	.main .we-do .module a .spot { font-size: 20px;}
+	.main .we-do .module a h3 { font-size: 16px;}
+	.main .we-do .module a .txt { width: 240px;}
+	.main .we-do .module a .txt p { line-height: 18px; font-size: 12px;}
+	
+	.main .we-can { margin-top: 20px; height: 540px; background: url(../images/mobile/index_03.jpg) no-repeat center top; background-size: cover;}
+	.main .we-can .title { width: 199px; height: 72px;}
+	.main .we-can .title h2 { margin-left: 40px; padding-top: 18px;}
+	.main .we-can .title h3 { margin-left: 40px;}
+	.main .we-can .list { width: 78%; margin: 0 auto; padding-top: 4.7rem;}
+	.main .we-can .list li { display: block; width: auto;}
+	.main .we-can .list li.first { margin-left: 0;}
+	.main .we-can .list li h3 { margin-bottom: .2rem; font-size: 16px; font-weight: bold;}
+	.main .we-can .list li p { margin-bottom: 20px; width: auto; height: auto;}
+	.main .we-can .list li p { font-size: 12px;}
+	
+	.main .improvement { padding: 25px 0;}
+	.main .improvement .title { margin-bottom: 0;}
+	.main .improvement .map { margin-top: 30px; height: 160px; padding-top: 10rem; background-position: center top; background-size: 62% auto;}
+	.main .improvement .map { position: relative; width: auto;}
+	.main .improvement .map .left,
+	.main .improvement .map .right { width: 50%; height: 150px;}
+	.main .improvement .map .left-top { top: 0; left: 0; width: 100%;}
+	.main .improvement .map .left-bottom { bottom: 0; left: 0; width: 100%;}
+	.main .improvement .map .right-top { top: 0; right: 0; width: 100%;}
+	.main .improvement .map .right-bottom { bottom: 0; right: 0; width: 100%;}
+	.main .improvement .map .left .line-box,
+	.main .improvement .map .right .line-box { display: none;}
+	.main .improvement .map .txt h3 { margin-bottom: 5px; font-size: 14px;}
+	.main .improvement .map .txt h4 { margin-bottom: 2px; font-size: 12px;}
+	.main .improvement .map .txt .sub-menu a {font-size: 12px;}
+	.main .improvement .map .plus { display: block; position: absolute; left: 50%; bottom: 65px; margin-left: -15px; color: #00b0f0; font-size: 30px;}
+	
+	.main .multiple { width: auto; padding: 1.9rem 0;}
+	.main .multiple .title { margin-bottom: 40px;}
+	.main .multiple .list { float: none; width: 95%; margin: 0 auto;}
+	.main .multiple .list .title { padding: 8px; font-size: 12px;}
+	.main .multiple .list .sub { width: 80%; padding-top: 0;}
+	.main .multiple .list .sub span { width: 60px; margin: 0 0 14px 5px; padding: 8px 0; font-size: 12px;}
+	
+	.main .customization { height: 348px; background-size: cover;}
+	.main .customization .title { margin-bottom: 23px; padding-top: 18px;}
+	.main .customization .module { width: 90%; margin: 0 auto;}
+	.main .customization .module li { float: none; margin-bottom: 20px; width: 100%;}	
+	.main .customization .module .item .info { width: 80%;}
+	.main .customization .module .item .info h3 { margin-bottom: 3px; font-size: 14px;}
+	.main .customization .module .item .info p { line-height: 16px; font-size: 12px;}
+	
+	.main .cooperation { width: auto; margin-top: 48px;}
+	.main .cooperation .title { margin-bottom: 28px;}
+	.main .cooperation .list li { width: 50%;}
+	.main .cooperation .list li a { width: 6.35rem; height: 4.75rem; background-color: #fff;}
+	.main .cooperation .list li a:visited { background-color: #fff;}
+	/*.main .cooperation .list li a:hover { background-color: #fff;}*/
+	.main .cooperation .list li a:active { background-color: #f3f3f3;}
+	.main .cooperation .list li a img { width: 80%;}
+	
+	.popup { margin: 0; width: 90%; /*top: 0; right: 0; bottom: 0; left: 0;*/ -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+	.get-data .title h2 { width: 80%; line-height: 18px;}
+	.get-data .input-area { width: 90%;}
+	.input-area .cell { width: 75%;}
+	.get-data .input-area input,
+	.get-data .input-area textarea { width: 95%;}
+	
+	@-webkit-keyframes slideInDown {
+	  from {
+	    -webkit-transform: translate3d(-50%, -100%, 0);
+	    visibility: visible;
+	  }
+	
+	  to {
+	    -webkit-transform: translate3d(-50%, -50%, 0);
+	  }
+	}
+	
+	@keyframes slideInDown {
+	  from {
+	    transform: translate3d(-50%, -100%, 0);
+	    visibility: visible;
+	  }
+	
+	  to {
+	    transform: translate3d(-50%, -50%, 0);
+	  }
+	}
+	
+	.slideInDown {
+	  -webkit-animation-name: slideInDown;
+	  animation-name: slideInDown;
+	}
+}
+
+/* 适配于iphone4及以上的分辨率 */
+@media screen and (max-width: 320px) {
+	.main .we-do .module a .txt { width: 100%;}
+	.main .multiple .list .sub { width: 75%; padding-top: 0;}
+	.input-area .cell { width: 70%;}
+	.main .customization .module .item .info { width: 78%;}
+	.get-data .input-area input,
+	.get-data .input-area textarea { width: 90%;}
+}
